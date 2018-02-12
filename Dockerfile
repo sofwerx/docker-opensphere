@@ -47,6 +47,9 @@ WORKDIR /opensphere-yarn-workspace/workspace/opensphere
 #RUN yarn install
 RUN npm install
 
+## Install plugins
+RUN  npm install opensphere-plugin-wfs
+
 # http://localhost:8282/opensphere
 # http://localhost:8282/opensphere/dist/opensphere
 
