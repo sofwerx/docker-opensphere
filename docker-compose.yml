@@ -7,7 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: opensphere
-    hostname: mageopensphere
+    hostname: opensphere
+    imagename: sofwerx/opensphere
     environment:
       PORT: 8282
     ports:
