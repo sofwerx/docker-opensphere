@@ -44,11 +44,13 @@ RUN git clone https://github.com/ngageoint/opensphere /opensphere-yarn-workspace
 
 WORKDIR /opensphere-yarn-workspace/workspace/opensphere
 
-#RUN yarn install
-RUN npm install
+RUN apt-get update && apt-get install -y npm
+
+#RUN npm install
+RUN yarn install
 
 ## Install plugins
-RUN  npm install opensphere-plugin-wfs
+#RUN npm install opensphere-plugin-wfs
 
 # http://localhost:8282/opensphere
 # http://localhost:8282/opensphere/dist/opensphere
